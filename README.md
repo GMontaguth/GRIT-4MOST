@@ -14,7 +14,7 @@ All calibration columns (CAL_MAG_*) are placeholders filled with 0.0.
 
 ## Sample Definition
 
-The galaxies included in this catalogue are red, low-Sérsic systems selected from S-PLUS photometry and structural measurements:
+The galaxies included in this catalogue are red and low-Sérsic systems selected from S-PLUS photometry and structural measurements:
 
 Colour cut: 
 
