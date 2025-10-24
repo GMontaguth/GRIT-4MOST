@@ -32,40 +32,60 @@ None
 
 This dataset contains astronomical targets selected for observation with the 4MOST spectrograph. The file 4MOST_targets_LRS_GRIT.zip includes a compilation of 738 galaxies included in this catalogue are red and low-Sérsic systems selected from S-PLUS photometry, with their celestial coordinates, magnitudes, and other properties relevant for spectroscopic observations.
 
-# FITS File Structure
+## Table Description – `4MOST_targets_LRS_GRIT.fits`
 
-The main file s contains a binary table with multiple columns describing the properties of the target objects. The data is formatted according to 4MOST requirements for observation proposals. Column Descriptions:
+This FITS binary table contains **738 rows** and **35 columns**, following the VIS-MAN-4MOST-47110-1720-0001 format (version 2.6).  
+Below is a summary of all table fields:
 
-Index 	Name 	Description 	Type
-0 	INDEX 	Row index in the table 	Long
-1 	NAME 	Object identifier 	String
-2 	RA 	Right ascension (J2027) in degrees 	Double
-3 	DEC 	Declination (J2027) in degrees 	Double
-4 	PMRA 	Proper motion in RA (mas/year) 	Double
-5 	PMDEC 	Proper motion in DEC (mas/year) 	Double
-6 	EPOCH 	Position epoch 	Double
-7 	RESOLUTION 	Required spectral resolution 	Long
-8 	SUBSURVEY 	Subsurvey identifier 	String
-9 	TEMPLATE 	Spectral template to be used 	String
-10 	RULESET 	Observation ruleset 	String
-11 	EXTENT_FLAG 	Object extent flag 	Long
-12 	EXTENT_PARAMETER 	Extent parameter 	Double
-13 	EXTENT_INDEX 	Extent index 	Double
-14 	MAG_TYPE 	Photometric magnitude system 	String
-15 	MAG 	Object magnitude 	Double
-16 	MAG_ERR 	Magnitude error 	Double
-17 	DATE_EARLIEST 	Earliest observation date 	Long
-18 	DATE_LATEST 	Latest observation date 	Long
-19 	CADENCE 	Observation cadence 	Long
-20 	REDDENING 	Reddening (E(B-V)) 	Double
-21 	REDSHIFT_ESTIMATE 	Estimated redshift 	Double
-22 	REDSHIFT_ERROR 	Estimated redshift error 	Double
-23 	TEMPLATE_REDSHIFT 	Template redshift 	Double
-24-32 	CAL_MAG_* 	Calibrated magnitudes in different bands 	Double
-33 	CLASSIFICATION 	Object classification 	String
-34 	COMPLETENESS 	Observation completeness 	Double
-35 	PARALLAX 	Object parallax 	Double
+| Index | Name              | Description                                      | Unit           | Type   |
+|:-----:|-------------------|--------------------------------------------------|----------------|--------|
+| 1     | NAME              | Object identifier                               | —              | String |
+| 2     | RA                | Right Ascension (J2027)                         | deg            | Float  |
+| 3     | DEC               | Declination (J2027)                             | deg            | Float  |
+| 4     | PMRA              | Proper motion in RA                             | mas·yr⁻¹       | Float  |
+| 5     | PMDEC             | Proper motion in DEC                            | mas·yr⁻¹       | Float  |
+| 6     | EPOCH             | Position epoch                                  | yr             | Float  |
+| 7     | RESOLUTION        | Required spectral resolution                    | —              | Int    |
+| 8     | SUBSURVEY         | Subsurvey identifier                            | —              | String |
+| 9     | TEMPLATE          | Spectral template name                          | —              | String |
+| 10    | RULESET           | Observation ruleset                             | —              | String |
+| 11    | EXTENT_FLAG       | Object extent flag                              | —              | Int    |
+| 12    | EXTENT_PARAMETER  | Extent parameter (angular size)                 | arcsec         | Float  |
+| 13    | EXTENT_INDEX      | Extent index                                    | —              | Float  |
+| 14    | MAG_TYPE          | Photometric magnitude system                    | —              | String |
+| 15    | MAG               | Object magnitude                                | mag            | Float  |
+| 16    | MAG_ERR           | Magnitude error                                 | mag            | Float  |
+| 17    | DATE_EARLIEST     | Earliest observation date                       | d              | Float  |
+| 18    | DATE_LATEST       | Latest observation date                         | d              | Float  |
+| 19    | CADENCE           | Observation cadence                             | —              | Int    |
+| 20    | REDDENING         | Reddening (E(B–V))                              | mag            | Float  |
+| 21    | REDSHIFT_ESTIMATE | Estimated redshift                              | —              | Float  |
+| 22    | REDSHIFT_ERROR    | Estimated redshift uncertainty                  | —              | Float  |
+| 23    | TEMPLATE_REDSHIFT | Template redshift                               | —              | Float  |
+| 24    | CAL_MAG_BLUE      | Calibrated magnitude (blue band)                | mag            | Float  |
+| 25    | CAL_MAG_GREEN     | Calibrated magnitude (green band)               | mag            | Float  |
+| 26    | CAL_MAG_RED       | Calibrated magnitude (red band)                 | mag            | Float  |
+| 27    | CAL_MAG_ERR_BLUE  | Error in blue-band calibrated magnitude         | mag            | Float  |
+| 28    | CAL_MAG_ERR_GREEN | Error in green-band calibrated magnitude        | mag            | Float  |
+| 29    | CAL_MAG_ERR_RED   | Error in red-band calibrated magnitude          | mag            | Float  |
+| 30    | CAL_MAG_ID_BLUE   | Calibration source ID (blue band)               | —              | String |
+| 31    | CAL_MAG_ID_GREEN  | Calibration source ID (green band)              | —              | String |
+| 32    | CAL_MAG_ID_RED    | Calibration source ID (red band)                | —              | String |
+| 33    | CLASSIFICATION    | Object classification                           | —              | String |
+| 34    | COMPLETENESS      | Observation completeness                        | —              | Float  |
+| 35    | PARALLAX          | Object parallax                                 | mas            | Float  |
 
+---
+
+**Additional information:**
+- **FMTDOC:** VIS-MAN-4MOST-47110-1720-0001  
+- **FMTVERS:** 2.6  
+- **Number of rows:** 738  
+- **Number of columns:** 35  
+- **Checksum:** WmPDXlMAWlMAWlMA  
+- **Created:** 2025-10-21  
+
+---
 ## Notes & Assumptions
 
 PMRA, PMDEC, PARALLAX are set to 0.0 (no Gaia values provided).
