@@ -86,21 +86,13 @@ Below is a summary of all table fields:
 - **Created:** 2025-10-21  
 
 ---
-## Notes & Assumptions
+# Scientific Context
 
-PMRA, PMDEC, PARALLAX are set to 0.0 (no Gaia values provided).
-
-RESOLUTION = 1 corresponds to LRS.
-
-EXTENT_PARAMETER is computed from effective radius (re) multiplied by the pixel scale 0.55 arcsec/pix.
-
-RULESET was assigned uniformly as ST_RULESET_LRS; finer ruleset splitting by magnitude is possible but optional.
-
-All calibration columns (CAL_MAG_*) are placeholders filled with 0.0.
+Galaxy groups are the most common environment in the nearby Universe and play a central role in the hierarchical growth of cosmic structures. Their relatively shallow potential wells and high interaction rates make them ideal laboratories for studying environmental mechanisms such as tidal interactions, strangulation, and minor mergers that can transform galaxies before they fall into clusters — a process known as pre-processing. In this context, transition galaxies (TGs) — red systems with low Sérsic indices — are key tracers of morphological and star formation quenching. Previous works (e.g. Montaguth et al. 2023, 2025) have shown that TGs in compact and non-compact groups display distinct structural properties compared to their field counterparts, with steeper and lower normalised mass–size relations that point to bulge growth and disc fading as environmental effects. The GRIT@4MOST project aims to obtain low-resolution spectra (R ≈ 4000–7800) for a representative sample of transition galaxies in groups identified from the 2PIGG and S-PLUS/eROSITA catalogues. This will allow detailed measurements of stellar populations, metallicities, ionisation mechanisms, and kinematics, providing the first homogeneous spectroscopic characterisation of transition galaxies in group environments and offering crucial insight into the physical processes driving galaxy transformation and pre-processing.
 
 ## Sample Definition
 
-The 738 galaxies included in this catalogue are red and low-Sérsic systems selected from S-PLUS photometry and structural measurements:
+Targets were drawn from galaxy groups in the southern hemisphere using the 2PIGG (Eke et al. 2004) and S-PLUS/eROSITA (Doubrawa et al., in prep.) catalogues. Groups were cross-matched with S-PLUS imaging to derive consistent structural parameters across 12 filters. Sérsic indices were measured with MorphoPLUS, a pipeline based on GALFITM that performs multi-band Sérsic fitting. Transition galaxies (TGs) were defined as systems with red colours 
 
 Colour cut: 
 
