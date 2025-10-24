@@ -110,22 +110,22 @@ This combination of photometric and structural criteria identifies galaxies that
   <img src="Ra_hist.png" width="500">
 </p>
 
-**Figure 1.** Distribution of right ascension (RA) for the selected transition galaxies.
+Distribution of right ascension (RA) for the selected transition galaxies.
 
 <p align="center">
   <img src="r.png" width="500">
 </p>
 
-**Figure 2.** Distribution of r-band magnitudes from S-PLUS (3-arcsec aperture).
+Distribution of r-band magnitudes from S-PLUS (3-arcsec aperture).
 
 <p align="center">
   <img src="density_RA_DEC.png" width="550">
 </p>
 
-**Figure 3.** Sky density distribution of transition galaxies in equatorial coordinates.
+Sky density distribution of transition galaxies in equatorial coordinates.
 
 <p align="center">
   <img src="TGs(1).png" width="500">
 </p>
 
-**Figure 4.** ontours of the effective radius as a function of the S´ersic index in the r−band. The distribution of each parameter is shown in the margin plot.
+Contours of the effective radius as a function of the S´ersic index in the r−band. The distribution of each parameter is shown in the margin plot.
