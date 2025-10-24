@@ -1,4 +1,4 @@
-# GRIT@4MOST
+# GRIT@4MOST: Galaxies in Transition- Influence of group environment 
 
 # Abstract:
 More than half of the galaxies in the nearby Universe reside in groups, where slow encounters can
@@ -24,6 +24,47 @@ COPI: Ciria Lima Dias (Userena, Chile)
 
 # Target type
 () Galactic (x) Extragalactic
+
+# Which Surveys is this proposal related to? Which other supplementary target proposals is this proposal related to?
+None
+
+# Dataset Description
+
+This dataset contains astronomical targets selected for observation with the 4MOST spectrograph. The file 4MOST_targets_LRS_GRIT.zip includes a compilation of 738 galaxies included in this catalogue are red and low-Sérsic systems selected from S-PLUS photometry, with their celestial coordinates, magnitudes, and other properties relevant for spectroscopic observations.
+
+# FITS File Structure
+
+The main file s contains a binary table with multiple columns describing the properties of the target objects. The data is formatted according to 4MOST requirements for observation proposals. Column Descriptions:
+
+Index 	Name 	Description 	Type
+0 	INDEX 	Row index in the table 	Long
+1 	NAME 	Object identifier 	String
+2 	RA 	Right ascension (J2027) in degrees 	Double
+3 	DEC 	Declination (J2027) in degrees 	Double
+4 	PMRA 	Proper motion in RA (mas/year) 	Double
+5 	PMDEC 	Proper motion in DEC (mas/year) 	Double
+6 	EPOCH 	Position epoch 	Double
+7 	RESOLUTION 	Required spectral resolution 	Long
+8 	SUBSURVEY 	Subsurvey identifier 	String
+9 	TEMPLATE 	Spectral template to be used 	String
+10 	RULESET 	Observation ruleset 	String
+11 	EXTENT_FLAG 	Object extent flag 	Long
+12 	EXTENT_PARAMETER 	Extent parameter 	Double
+13 	EXTENT_INDEX 	Extent index 	Double
+14 	MAG_TYPE 	Photometric magnitude system 	String
+15 	MAG 	Object magnitude 	Double
+16 	MAG_ERR 	Magnitude error 	Double
+17 	DATE_EARLIEST 	Earliest observation date 	Long
+18 	DATE_LATEST 	Latest observation date 	Long
+19 	CADENCE 	Observation cadence 	Long
+20 	REDDENING 	Reddening (E(B-V)) 	Double
+21 	REDSHIFT_ESTIMATE 	Estimated redshift 	Double
+22 	REDSHIFT_ERROR 	Estimated redshift error 	Double
+23 	TEMPLATE_REDSHIFT 	Template redshift 	Double
+24-32 	CAL_MAG_* 	Calibrated magnitudes in different bands 	Double
+33 	CLASSIFICATION 	Object classification 	String
+34 	COMPLETENESS 	Observation completeness 	Double
+35 	PARALLAX 	Object parallax 	Double
 
 ## Notes & Assumptions
 
