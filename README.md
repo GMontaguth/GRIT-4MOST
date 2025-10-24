@@ -105,3 +105,27 @@ n_r<2.5, selecting galaxies with disc-like or transitional morphologies.
 Photometric system: The S-PLUS r filter is designed to be SDSS r-like, ensuring compatibility with Sloan Digital Sky Survey measurements.
 
 This combination of photometric and structural criteria identifies galaxies that are already evolving away from LTG population, making them suitable transition/quenched candidates for spectroscopic follow-up with 4MOST LRS.
+# Figures
+<p align="center">
+  <img src="Ra_hist.png" width="500">
+</p>
+
+**Figure 1.** Distribution of right ascension (RA) for the selected transition galaxies.
+
+<p align="center">
+  <img src="r.png" width="500">
+</p>
+
+**Figure 2.** Distribution of r-band magnitudes from S-PLUS (3-arcsec aperture).
+
+<p align="center">
+  <img src="density_RA_DEC.png" width="550">
+</p>
+
+**Figure 3.** Sky density distribution of transition galaxies in equatorial coordinates.
+
+<p align="center">
+  <img src="TGs(1).png" width="500">
+</p>
+
+**Figure 4.** ontours of the effective radius as a function of the S´ersic index in the r−band. The distribution of each parameter is shown in the margin plot.
