@@ -2,7 +2,10 @@
 
 ## Sub-survey title: GRIT@4MOST: Galaxies in Transition — Influence of Group Environment
 Contact person: Erik V. R. Lima
+
 Contact email address: erikv.usp@gmail.com
+
+The GRIT@4MOST sub-survey aims to obtain low-resolution spectroscopy of 738 transition galaxies (red, low-Sérsic systems) in group environments to characterise their stellar populations, metallicities, and ionisation mechanisms, providing direct constraints on galaxy pre-processing and morphological transformation in the local Universe.
 
 ## 1.1 Source of target catalogue selection
 
