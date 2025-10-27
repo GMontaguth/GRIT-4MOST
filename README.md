@@ -73,7 +73,6 @@ All units and metadata have been validated using the fitsvalidator tool.
 
 The calibration columns (CAL_MAG_*) are intentionally filled with 0.0 placeholders, as no external photometric calibration was applied.
 The EXTENT_PARAMETER values were computed from the effective radius (Re) in arcseconds, multiplied by the S-PLUS pixel scale (0.55 arcsec/pix).
-No additional quality cuts or down-sampling were applied beyond the morphological and photometric criteria described above.
 
 # Figures
 <p align="center">
