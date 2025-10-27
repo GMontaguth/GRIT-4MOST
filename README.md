@@ -8,8 +8,9 @@ Contact email address: erikv.usp@gmail.com
 
 Targets were selected using imaging from the S-PLUS survey (DR5; Lima et al., in prep.) and group identifications from the 2PIGG catalogue (Eke et al. 2004) and S-PLUS/eROSITA group catalogue (Doubrawa et al., in prep.).
 All S-PLUS data are publicly available at: https://splus.cloud
-The final catalogue was generated using internally processed S-PLUS data products, including structural parameters derived with the MorphoPLUS pipeline, which is based on GALFITM and performs multi-band Sérsic fitting across 12 S-PLUS filters.
-The resulting target table (4MOST_targets_LRS_GRIT.fits) is stored in the GRIT@4MOST repository.
+The GRIT@4MOST sample includes a total of 738 galaxies, which represents the complete set of transition systems selected for spectroscopic follow-up with 4MOST LRS.
+These targets were defined from S-PLUS photometric data and structural parameters derived using the MorphoPLUS pipeline, based on GALFITM, which performs multi-band Sérsic fitting across the 12 S-PLUS filters.
+All catalogue products are stored in the GRIT@4MOST repository.
 
 ## 1.2 Target selection overview
 
@@ -36,7 +37,7 @@ Photometry is measured directly from S-PLUS imaging using SExtractor aperture ma
 All magnitudes in the catalogue are observed values (not corrected for Galactic extinction).
 The photometric system is AB, and the S-PLUS broadband filters (g, r, i, z) are SDSS-like, while the u filter follows the Javalambre (J-PLUS) system.
 
-# 1.5 Redshifts
+## 1.5 Redshifts
 
 The redshifts in the GRIT@4MOST catalogue come from two independent sources, depending on the parent group catalogue:
 
@@ -48,18 +49,25 @@ For S-PLUS/eROSITA groups (Doubrawa et al., in prep.):
 The redshifts are photometric, derived using the machine-learning method of Lima et al. (2022) applied to S-PLUS DR5 photometry cross-matched with unWISE data.
 This approach combines a Bayesian Neural Network and a Mixture Density Network to predict photometric redshifts, achieving a scatter σₙₘₐd ≈ 0.023, a normalized bias of −0.001, and an outlier fraction of 0.64% for galaxies with 16 < r_auto < 21 mag.
 
-# 1.6 Reddening
+## 1.6 Reddening
 
 Foreground reddening is estimated using the Schlegel, Finkbeiner & Davis (1998) maps, adopting E(B–V) values at the target position via bilinear interpolation.
 The reddening values are stored in the REDDENING column of the FITS catalogue.
 Photometric magnitudes are not corrected for this effect within the table.
 
+## 1.7 Spectral templates
 
+No spectral templates were used for the target selection.
+The GRIT@4MOST catalogue is purely photometric and structural, based on S-PLUS imaging and Sérsic parameters derived with MorphoPLUS.
+No spectral energy distribution fitting or model templates were applied at this stage.
+The only model-based quantity included in the catalogue is the foreground reddening correction (E(B–V)), estimated from the Schlegel, Finkbeiner & Davis (1998) dust maps.
 
+## 1.8 Known connections to other sub-surveys
 
-Photometric system: The S-PLUS r filter is designed to be SDSS r-like, ensuring compatibility with Sloan Digital Sky Survey measurements.
+There are no known connections or overlaps with other 4MOST sub-surveys or supplementary target programmes.
 
-This combination of photometric and structural criteria identifies galaxies that are already evolving away from LTG population, making them suitable transition/quenched candidates for spectroscopic follow-up with 4MOST LRS.
+## 1.9 Additional information
+
 # Figures
 <p align="center">
   <img src="Ra_hist.png" width="500">
