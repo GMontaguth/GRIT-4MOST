@@ -68,6 +68,13 @@ There are no known connections or overlaps with other 4MOST sub-surveys or suppl
 
 ## 1.9 Additional information
 
+The GRIT@4MOST catalogue (4MOST_targets_LRS_GRIT.fits) follows the VIS-MAN-4MOST-47110-1720-0001 format (version 2.6) and contains 738 galaxies selected for spectroscopic follow-up with the 4MOST LRS.
+All units and metadata have been validated using the fitsvalidator tool.
+
+The calibration columns (CAL_MAG_*) are intentionally filled with 0.0 placeholders, as no external photometric calibration was applied.
+The EXTENT_PARAMETER values were computed from the effective radius (Re) in arcseconds, multiplied by the S-PLUS pixel scale (0.55 arcsec/pix).
+No additional quality cuts or down-sampling were applied beyond the morphological and photometric criteria described above.
+
 # Figures
 <p align="center">
   <img src="Ra_hist.png" width="500">
